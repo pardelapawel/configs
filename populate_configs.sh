@@ -46,8 +46,9 @@ for file_name in *; do
             echo
         fi
 
-        mv "${file_path}" "${copy_path}"
-        echo "Moved ${file_path}" to "${copy_path}"
+        cp "${file_path}" "${copy_path}"
+        echo "Copied '${file_path}' to '${copy_path}'"
+        echo
     fi
 done
 
