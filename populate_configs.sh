@@ -16,7 +16,7 @@ my_home="${HOME}"
 
 if [ -z my_home ]; then
     echo "Looks like your HOME is empty..."
-    echo "I don't know ow to handle that"
+    echo "I don't know how to handle that"
     exit 1
 fi
 
@@ -34,6 +34,7 @@ for file_name in *; do
     echo
     confirmation_msg="Do you want to move '${file_name}' to '${copy_path}'? [y/N]"
     read -p "${confirmation_msg}" -n 1 -r
+    echo
     echo
 
     if [[ $REPLY =~ ^[Yy]$ ]]; then
