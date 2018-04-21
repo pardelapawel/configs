@@ -23,8 +23,10 @@ alias wdiff="wdiff -n -w $'\033[30;41m' -x $'\033[0m' -y $'\033[30;42m' -z $'\03
 alias dwdiff="dwdiff -w $'\033[30;41m' -x $'\033[0m' -y $'\033[30;42m' -z $'\033[0m'"
 alias diffy='diff --suppress-common-lines -y -W $(( $(tput cols) - 2 ))'
 
-alias gdiff='git difftool'
+alias g='git'
 alias gt='git status'
+alias gitc='git checkout'
+alias gdiff='git difftool'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 
 
