@@ -62,7 +62,7 @@ if &diff
     set noreadonly
 else
     "unset adding new line at the end of a file
-    set binary
+    "set binary % this NO expands tab!!!! why? "https://github.com/avelino/vim-bootstrap/issues/193
     set noeol
 
     "Closing NERDTree if the last window
